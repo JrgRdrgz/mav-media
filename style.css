@@ -13,7 +13,7 @@
 }
 
 .nav-container{
-    max-width: 1280px;
+    max-width: 1350px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -33,11 +33,19 @@ nav{
 }
 
 h1{
+    margin: auto;
     color: var(--secondary);
-    font-size: 28px;
+    font-size: 50px;
     font-weight: 900;
     letter-spacing: 2px;
     text-transform: uppercase;
+}
+
+.mavmedialogo{
+    width: 100px;
+    height: auto;
+    margin-left: 20px;
+    margin-right: auto;
 }
 
 .navbutton{
@@ -57,12 +65,12 @@ h1{
     width: 33px;
     height: 4px;
     margin-bottom: 5px;
+    margin-left: 5px;   
     position: relative;
     background-color: var(--light);
     border-radius: 6px;
     z-index: 1;
     transform: 0 0;
-
     transition: 0.4s;
 }
 
@@ -97,27 +105,24 @@ h1{
 
 .menu a{
     color: white;
-    margin: 0 16px;
+    margin: 0 20px;
     font-weight: 600;
     text-decoration: none;
     transition: 0.4s;
-    padding: 8px 16px;
+    padding: 8px 10px;
     border-radius: 99px;
 }
 
 .menu a.is-active, .menu a:hover{
     background-color: var(--secondary);
-
-
 }
 
-@media (min-width: 725px){
+@media (min-width: 1000px){
     .navbutton{
         display: none;
     }
 
     .menu{
         display: flex;
-        
     }
 }
