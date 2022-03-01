@@ -143,3 +143,22 @@ footer{
 
 #paragraphfooter{
     color: whitesmoke;
+}
+
+#video-container{
+    position: relative;
+    margin-top: 25px;
+    width: 100%;
+    text-align: center;
+}
+
+#lofi{
+    color: white;
+    margin-top: 250px;
+    text-align: center;
+    font-family: serif;
+    font-size: 30px;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
