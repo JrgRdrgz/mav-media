@@ -32,6 +32,7 @@ body{
 }
 
 .nav-container{
+    position: static;
     max-width: 1350px;
     margin: 0 auto;
     margin-bottom: 10px;
@@ -171,4 +172,54 @@ footer{
     margin-left: auto;
     margin-right: auto;
     width: 50em;
+}
+
+#members{
+    margin-top: 45px;
+}
+
+ul{
+    position: static;
+    margin-top: 50px;
+    color: white;
+    background: #ccc;
+    height: 600px;
+}
+
+ul li{
+    list-style: none;
+    position: relative;
+    width: 20%;
+    height:100%;
+    border-right: 1px solid #000;
+    float: left;
+    box-sizing: border-box;
+    transition: .5x;
+    text-align: center;
+    overflow: hidden;
+}
+
+ul:hover li{
+    width: 10%;
+}
+
+ul li:nth-child(1){
+    background: url();
+}
+
+ul li:hover{
+    width: 60%; 
+}
+
+ul li .content{
+   position: absolute;
+   bottom: -100%;
+   left: 0;
+   width: 100%;
+   background: rgba(0, 0, 0, 0.5);
+}
+
+ul li:hover .content{
+    bottom:0;
+    transition: .2s;
 }
