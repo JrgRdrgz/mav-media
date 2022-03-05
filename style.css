@@ -115,7 +115,7 @@ nav{
 }
 
 h1{
-    margin-top: 5px;
+    margin-top:5px;
     text-align: center;
     color: var(--secondary);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -178,9 +178,9 @@ footer{
     margin-top: 45px;
 }
 
-#title{
-    margin-top: 0;
+#membertitle{
     color: white;
+    font-size: 30px;
     font-family: sans-serif;
     text-transform: uppercase;
     font-style: normal;
