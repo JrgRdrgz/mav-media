@@ -178,6 +178,14 @@ footer{
     margin-top: 45px;
 }
 
+#title{
+    margin-top: 0;
+    color: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
 ul{
     position: static;
     margin-top: 50px;
@@ -205,6 +213,8 @@ ul:hover li{
 
 ul li:nth-child(1){
     background: url();
+    background-size: cover;
+    background-position: left;
 }
 
 ul li:hover{
