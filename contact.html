@@ -21,12 +21,35 @@
                 <a href="blog.html">Blog</a>
             </div>
         </div>
-
         <img class="mavmedialogo" src="Maverick Media Logo 300.jpg" alt="Maverick Media Logo">
-
     </nav>
 
+    <div>
+        <p id="lofi">Contact</p>
+    </div>
 
+    <div class="contact-form">
+        <form action="https://formspree.io/f/xeqnkpkq" method="POST">
+            <div class="form">
+                <label for="Name">Name:</label>
+                <input type="text" id="Name" name="Name">
+            </div>
+
+            <div class="form">
+                <label for="Email">Email:</label>
+                <input type="text" id="Email" name="Email">
+            </div>
+
+            <div class="form">
+                <label for="Message">Message:</label>
+                <textarea name="Message" id="Message" cols="25" rows="3"></textarea>
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div id="status" class="error">Message Sent</div>
 </body>
 
 </html>

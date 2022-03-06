@@ -1,6 +1,6 @@
 :root{
     --primary:#0064b1;
-    --secondary:#f58026;
+    --secondary:#f46f19;
     --light: #EEEEEE;
     --dark: #212121;
 }
@@ -15,8 +15,8 @@
 body{
     background:
         linear-gradient(
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
         ),
         url("uta-tower-daylight-small-1h2cjjf.png");
         
@@ -24,6 +24,7 @@ body{
     background-position-y: 225px;
     background-attachment: fixed;
     background-size: cover;
+    
 }
 
 #header{
@@ -129,7 +130,7 @@ h1{
 }
 
 footer{
-    background-color: #f58026;
+    background-color: var(--secondary);
     position: fixed;
     bottom: 0;
     left: 0;
@@ -211,10 +212,17 @@ ul:hover li{
     width: 10%;
 }
 
+
 ul li:nth-child(1){
-    background: url();
+    background: url(Tower.PNG);
     background-size: cover;
     background-position: left;
+}
+
+ul li:nth-child(2){
+    background: url(photo-1596495578065-6e0763fa1178.avif);
+    background-size: cover;
+    background-position: center;
 }
 
 ul li:hover{
@@ -226,10 +234,97 @@ ul li .content{
    bottom: -100%;
    left: 0;
    width: 100%;
-   background: rgba(0, 0, 0, 0.5);
+   background: rgba(0, 0, 0, 0.9);
+   margin-bottom: 10px;
 }
 
 ul li:hover .content{
     bottom:0;
     transition: .2s;
+}
+
+.contact-form{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid var(--secondary);
+    border-radius: 8px;
+    margin: 0 auto;
+    width: 50%;
+    padding: 20px;
+    background: rgba(0, 0, 0, .7);
+    box-shadow: 0px 0px 20px var(--primary);
+}
+
+.form{
+    width: 100%;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.form input,
+.form textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+textarea{
+    resize: vertical;
+}
+
+button[type="submit"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 24px;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+    color: var(--secondary);
+    font-weight: 1000;
+    transition: .3s ease background-color;
+}
+
+button[type="submit"]:hover{
+    background-color: var(--primary);
+}
+
+#status{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    width: 20%;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+#status.success{
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+}
+
+#status.error{
+    background-color: rgb(240, 83, 36);
+    color: white;
+    animation: status 4s ease forwards;
+}
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+       opacity: 0;
+       pointer-events: none; 
+    }
 }
