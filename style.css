@@ -287,6 +287,8 @@ button[type="submit"]{
     color: var(--secondary);
     font-weight: 1000;
     transition: .3s ease background-color;
+    background-color: #212121;
+    border: 2px solid var(--primary)
 }
 
 button[type="submit"]:hover{
