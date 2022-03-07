@@ -209,24 +209,17 @@ ul li{
 }
 
 ul:hover li{
-    width: 10%;
+    width: 17.5%;
 }
 
-
-ul li:nth-child(1){
-    background: url(Tower.PNG);
+ul li:nth-child(3){
+    background: url(MakaylaMiller.jpeg);
     background-size: cover;
-    background-position: left;
-}
-
-ul li:nth-child(2){
-    background: url(photo-1596495578065-6e0763fa1178.avif);
-    background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 ul li:hover{
-    width: 60%; 
+    width: 30%; 
 }
 
 ul li .content{
